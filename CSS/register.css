@@ -1,0 +1,245 @@
+    * {
+        font-family: iransans-medium;
+    }
+    
+    html {
+        direction: rtl;
+        box-sizing: border-box;
+        font-size: 16px;
+        height: 100%;
+        font-family: iransans-light;
+    }
+    
+    body {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        background: linear-gradient(to right, #d4d3d3, #f5e8e8);
+        min-height: 100%;
+    }
+    
+    a:link,
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .nav {
+        background-color: rgb(37, 37, 37);
+        padding: 1rem 1rem;
+        display: grid;
+        grid-template-areas: "home-item login-item";
+        justify-content: space-between;
+        font-size: 1rem;
+        /* box-sizing: border-box */
+    }
+    
+    .nav h2 {
+        grid-area: home-item;
+    }
+    
+    .nav span {
+        grid-area: login-item;
+        color: white;
+    }
+    
+    .item-nav {
+        padding: .5rem;
+        font-size: .7rem;
+    }
+    /*                                                    */
+    
+    .head {
+        margin-bottom: 1rem;
+        padding-right: 3rem;
+        background-color: #909091;
+        display: grid;
+        grid-template-areas: "item-head1 item-head1 item-head1" "item-head2 item-head2 item-head2" "  item-head3 item-head3 item-head3" " item-head4 item-head4 item-head4";
+    }
+    
+    .head li {
+        display: grid;
+        padding: 1rem;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    
+    .head li a {
+        color: rgb(255, 255, 255);
+    }
+    
+    .head .item-head1 {
+        grid-area: item-head1;
+    }
+    
+    .head .item-head2 {
+        grid-area: item-head2;
+    }
+    
+    .head .item-head3 {
+        grid-area: item-head3;
+    }
+    
+    .head .item-head4 {
+        grid-area: item-head4;
+    }
+    
+    .rules-footer {
+        background-color: rgb(117, 117, 117);
+        padding: 1.5rem;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: iransans-medium;
+        font-size: .7rem;
+    }
+    
+    input[type=text],
+    input[type=password],
+    input[type=password-confirm],
+    input[type=email] {
+        width: 100%;
+        padding: 1rem;
+        margin: .8rem 0;
+        display: inline-block;
+        border: 1px solid gray;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    .register-box h2 {
+        display: grid;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    
+    button[type=submit] {
+        background-color: rgb(80, 182, 76);
+        color: white;
+        padding: .8rem 1.2rem;
+        margin: .7rem auto;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    button[type=submit]:hover {
+        border: none;
+        background-color: rgb(49, 190, 172);
+    }
+    
+    button[type=submit]:active {
+        background-color: rgb(28, 167, 28);
+        border: none;
+    }
+    
+    .register-head {
+        text-align: center;
+        margin: 1.4rem 0 1rem;
+    }
+    
+    .container {
+        padding: 1rem;
+        text-align: right;
+        color: white;
+    }
+    
+    .register-box {
+        background-color: rgb(60, 31, 31);
+        margin: 5% auto 15% auto;
+        width: 85%;
+        border: 1px solid rgb(126, 107, 107);
+        border-radius: 16px
+    }
+    /*                                              */
+    
+    @media screen and (min-width:700px) {
+        .nav {
+            padding: 1rem 4rem;
+        }
+        .item-nav {
+            font-size: 1rem;
+        }
+        .head {
+            display: grid;
+            grid-template-areas: "item-head1  item-head2   item-head3 item-head4";
+            justify-content: flex-start;
+        }
+        .head li {
+            font-size: 1.2rem;
+            padding: 1.5rem;
+        }
+        .register-box {
+            width: 65%;
+        }
+        button[type=submit] {
+            width: 100%;
+            padding: .7rem;
+        }
+        .rules-footer {
+            font-size: 1rem;
+        }
+    }
+    
+    @media screen and (min-width:800px) {
+        .head {
+            display: grid;
+            grid-template-areas: "item-head1  item-head2   item-head3 item-head4";
+            justify-content: flex-start;
+        }
+        .head li {
+            font-size: 1.2rem;
+            padding: 1.5rem;
+        }
+        .register-box {
+            width: 55%;
+        }
+        button[type=submit] {
+            width: 100%;
+            padding: .8rem;
+        }
+    }
+    
+    @media screen and (min-width:1100px) {
+        .head {
+            display: grid;
+            grid-template-areas: "item-head1  item-head2   item-head3 item-head4";
+            justify-content: flex-start;
+        }
+        .head li {
+            font-size: 1.2rem;
+            padding: 1.5rem;
+        }
+        .register-box {
+            width: 45%;
+        }
+        button[type=submit] {
+            width: 100%;
+            padding: .8rem;
+        }
+    }
+    
+    @media screen and (min-width:1300px) {
+        .head {
+            display: grid;
+            grid-template-areas: "item-head1  item-head2   item-head3 item-head4";
+            justify-content: flex-start;
+        }
+        .head li {
+            font-size: 1.2rem;
+            padding: 1.5rem;
+        }
+        .register-box {
+            width: 35%;
+        }
+        button[type=submit] {
+            width: 100%;
+            padding: .8rem;
+        }
+    }
